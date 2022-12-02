@@ -1,0 +1,23 @@
+[
+    {
+    "location":"Lafarge Lake",
+    "event":"Lights On Large", 
+    "month":"November 2022", 
+    "memory":"Posing with mommy in front of a beautiful Christmas lights display",
+    "photo":"images/at-lights-on-lafarge.jpg"
+    },
+    { 
+    "location":"Capilano Sunspension Bridge",
+    "event":"Canyon Frights",
+    "month":"October 2022", 
+    "memory":"Laying on gigantic pumpkins",
+    "photo":"images/eli-at-capilano-halloween.jpg"
+    },
+    { 
+    "location":"Parksville, Victoria", 
+    "event":"Daddy's Birthday Excursion",
+    "month":"September 2022", 
+    "memory":"Enjoying a dip in the ocean",
+    "photo":"images/eli-in-parksville.jpg"
+    }
+]

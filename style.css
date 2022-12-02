@@ -1,0 +1,40 @@
+/* simple reset */
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+body {
+    min-height: 100vh;
+    background-color: rgb(58, 89, 228);
+}
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+input, textarea, button,  select {
+    font: inherit;
+}
+#app {
+    max-width: 1440px;
+    margin: auto;
+}
+.title {
+font-family: 'Luckiest Guy', cursive;
+font-weight: 400;
+font-size: 7.5rem;
+color: white;
+text-align: center;
+margin-top: 7rem;
+}
+.activity-container {
+    display: flex;
+    margin-top: 2rem;
+}
+.event-photo {
+    width: 30rem;
+    border-radius: 2rem;
+}
