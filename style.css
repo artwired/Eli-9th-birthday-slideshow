@@ -10,6 +10,9 @@
 body {
     min-height: 100vh;
     background-color: rgb(58, 89, 228);
+    font-family: 'Anek Telugu', sans-serif;
+    color: white;
+    overflow:hidden;
 }
 img, picture, svg, video {
     display: block;
@@ -22,19 +25,49 @@ input, textarea, button,  select {
     max-width: 1440px;
     margin: auto;
 }
+/* Typography */
 .title {
 font-family: 'Luckiest Guy', cursive;
 font-weight: 400;
 font-size: 7.5rem;
-color: white;
 text-align: center;
-margin-top: 7rem;
+margin-top: 3rem;
+text-shadow: 5px 5px #000000;
+}
+.intro-text {
+    text-align: center;
+}
+.sub-heading {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.event-name {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-style: italic;
+}
+.the-month {
+    font-weight: 100;
+    font-size: .75rem;
+}
+.the-memory {
+    margin-top: 1rem;
 }
 .activity-container {
     display: flex;
     margin-top: 2rem;
+    align-content: center;
+}
+.activity {
+    text-align: center;
+    width: 28rem;
+    height:39rem;
+    background-color: rgb(80, 109, 239);
+    margin: 1rem;
+    border-radius: 2rem;
 }
 .event-photo {
-    width: 30rem;
-    border-radius: 2rem;
+    width: 28rem;
+    border-radius: 2rem 2rem 0 0;
+    border: 1rem solid rgb(248, 218, 47);
 }
