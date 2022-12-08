@@ -12,6 +12,7 @@ body {
     background-color: rgb(58, 89, 228);
     font-family: 'Anek Telugu', sans-serif;
     color: white;
+    overflow: hidden;
 }
 img, picture, svg, video {
     display: block;
@@ -52,86 +53,32 @@ text-shadow: 5px 5px #000000;
 .the-memory {
     margin-top: 1rem;
 }
-/* .activity-container {
-    display: flex;
-    margin-top: 2rem;
+.slideshow-container {
+    position: relative;
+    overflow: hidden;
+    margin: 2rem auto 0;
     align-content: center;
-} */
-.activity {
+    width: 30rem;
+    height:40rem;
+
+}
+.mySlides {
+    position: absolute;
+    top:0;
+    left: 0;
     text-align: center;
-    /* width: 28rem; */
     height:39rem;
     background-color: rgb(80, 109, 239);
     margin: 1rem;
     border-radius: 2rem;
+    opacity: 0;
+    transition: opacity ease-in-out;
+}
+.mySlides.current {
+    opacity: 1;
 }
 .event-photo {
     width: 28rem;
     border-radius: 2rem 2rem 0 0;
     border: 1rem solid rgb(248, 218, 47);
 }
-
-
-
-
-/* Slideshow container */
-.slideshow-container {
-    max-width: 28rem;
-    position: relative;
-    margin: auto;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-}
-/* Next & previous buttons */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding-top: 16px;
-    padding-bottom:16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  /* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  /* On hover, add a black background color with a little bit see-through */
-/* .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  } */
-  /* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  /* Fading animation */
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
