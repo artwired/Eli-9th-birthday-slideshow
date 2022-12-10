@@ -12,7 +12,7 @@ body {
     background-color: rgb(58, 89, 228);
     font-family: 'Anek Telugu', sans-serif;
     color: white;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 img, picture, svg, video {
     display: block;
@@ -39,20 +39,24 @@ text-shadow: 5px 5px #000000;
     margin-top: .5rem;
 }
 .sub-heading {
-    margin-top: 2rem;
-    font-size: 1.5rem;
+    margin-top: .75rem;
+    font-size: 1.25rem;
     font-weight: 600;
 }
 .event-name {
     font-family: 'Be Vietnam Pro', sans-serif;
     font-style: italic;
+    color: rgb(248, 218, 47);
 }
 .the-month {
     font-weight: 100;
     font-size: .75rem;
+    color: rgb(248, 218, 47);
 }
 .the-memory {
-    margin-top: 1rem;
+    margin-top: .5rem;
+    font-size: 1rem;
+    width: 20rem;
 }
 .slideshow-container {
     position: relative;
@@ -68,7 +72,7 @@ text-shadow: 5px 5px #000000;
     top:0;
     left: 0;
     text-align: center;
-    height:30rem;
+    height:31rem;
     background-color: rgb(80, 109, 239);
     margin: 1rem;
     border-radius: 2rem;
@@ -116,21 +120,23 @@ text-shadow: 5px 5px #000000;
     transform: translateX(-5px);
     transition: 0.2s ease;
 }
-@media (max-width: 1700px) {
+/* @media (max-width: 1700px) {
     .buttons button#next {
         right: 28%;
     }
     .buttons button#prev {
         left: 28%;
     }
-}
+} */
 
 @media (max-width: 1400px) {
     .buttons button#next {
-        right: 22%;
+        top:50%;
+        right: 30%;
     }
     .buttons button#prev {
-        left: 22%;
+        top:50%;
+        left: 30%;
     }
 }
 @media (max-width: 1130px) {
@@ -139,18 +145,15 @@ text-shadow: 5px 5px #000000;
     }
 }
 @media (max-width: 1080px) {
-    .intro-text {
-        margin-top: 2rem;
-    }
     .slideshow-container {
         margin: -.5rem auto 0;
     }
-    .buttons button {
-        margin-top: 24rem;
-    }
+    /* .buttons button {
+        margin-top: 0rem;
+    } */
     .buttons button#next {
-        bottom: 0;
-        right: 28rem;
+        top: 50%;
+        right: 30%;
         transition: all .2s ease-in-out;
     }
     .buttons button#next:hover {
@@ -167,8 +170,8 @@ text-shadow: 5px 5px #000000;
         transition:none;
     }
     .buttons button#prev {
-        bottom: 0;
-        left: 28rem;
+        top: 50%;
+        left: 30%;
         transition: all .2s ease-in-out;
     }
     .buttons button#prev:active {
@@ -182,7 +185,7 @@ text-shadow: 5px 5px #000000;
         font-size: 5rem;
     }
     .buttons button {
-        margin-top: 22.5rem;
+        margin-top: 19rem;
     }
     .buttons button#next {
         right: 24rem;
@@ -197,22 +200,19 @@ text-shadow: 5px 5px #000000;
     .title {
         font-size: 4rem;
     }
-    .buttons button {
-        margin-top: 22.5rem;
-    }
     .buttons button#next {
+        top: 50%;
         right: 20rem;
         transition: all .2s ease-in-out;
     }
     .buttons button#prev {
+        top: 50%;
         left: 20rem;
         transition: all .2s ease-in-out;
     }
 }
 @media (max-width: 700px) {
-    .buttons button {
-        margin-top: 22.5rem;
-    }
+
     .buttons button#next {
         /* bottom: -15rem; */
         right: 16rem;
@@ -227,6 +227,9 @@ text-shadow: 5px 5px #000000;
 @media (max-width: 590px) {
     .title {
         font-size: 3rem;
+    }
+    .buttons button {
+        margin-top: 17rem;
     }
     .buttons button#next {
         right: 12rem;
