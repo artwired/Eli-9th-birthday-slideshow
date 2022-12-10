@@ -59,7 +59,7 @@ text-shadow: 5px 5px #000000;
     overflow: hidden;
     margin: auto;
     align-content: center;
-    width: 30rem;
+    width: 23rem;
     height:40rem;
 
 }
@@ -79,7 +79,7 @@ text-shadow: 5px 5px #000000;
     opacity: 1;
 }
 .event-photo {
-    width: 28rem;
+    width: 23rem;
     border-radius: 2rem 2rem 0 0;
     border: 1rem solid rgb(248, 218, 47);
 }
