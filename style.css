@@ -93,6 +93,7 @@ text-shadow: 5px 5px #000000;
     background-color: transparent;
     cursor: pointer;
     outline: none;
+    height: 3rem;
 }
 .buttons button:hover {
     color: rgb(248, 218, 47);
@@ -100,7 +101,7 @@ text-shadow: 5px 5px #000000;
 .buttons button#next {
     position: absolute;
     top: 50%;
-    right: 640px;
+    right: 35%;
 }
 .buttons button#next:hover {
     transform: translateX(5px);
@@ -109,26 +110,47 @@ text-shadow: 5px 5px #000000;
 .buttons button#prev {
     position: absolute;
     top: 50%;
-    left: 640px;
+    left: 35%;
 }
 .buttons button#prev:hover {
     transform: translateX(-5px);
     transition: 0.2s ease;
 }
-
-@media (max-width: 1080px) {
-    .title {
-        font-size: 4.5rem;
+@media (max-width: 1700px) {
+    .buttons button#next {
+        right: 28%;
     }
+    .buttons button#prev {
+        left: 28%;
+    }
+}
+
+@media (max-width: 1400px) {
+    .buttons button#next {
+        right: 22%;
+    }
+    .buttons button#prev {
+        left: 22%;
+    }
+}
+@media (max-width: 1130px) {
+    .title {
+        font-size: 6rem;
+    }
+}
+@media (max-width: 1080px) {
     .intro-text {
-        margin-top: 5rem;
+        margin-top: 2rem;
     }
     .slideshow-container {
         margin: -.5rem auto 0;
     }
+    .buttons button {
+        margin-top: 24rem;
+    }
     .buttons button#next {
-        bottom: -19.5rem;
-        right: 20rem;
+        bottom: 0;
+        right: 28rem;
         transition: all .2s ease-in-out;
     }
     .buttons button#next:hover {
@@ -145,8 +167,8 @@ text-shadow: 5px 5px #000000;
         transition:none;
     }
     .buttons button#prev {
-        bottom: -19.5rem;
-        left: 20rem;
+        bottom: 0;
+        left: 28rem;
         transition: all .2s ease-in-out;
     }
     .buttons button#prev:active {
@@ -155,13 +177,70 @@ text-shadow: 5px 5px #000000;
         color: rgb(248, 218, 47);
     }
 }
+@media (max-width: 1000px) {
+    .title {
+        font-size: 5rem;
+    }
+    .buttons button {
+        margin-top: 22.5rem;
+    }
+    .buttons button#next {
+        right: 24rem;
+        transition: all .2s ease-in-out;
+    }
+    .buttons button#prev {
+        left: 24rem;
+        transition: all .2s ease-in-out;
+    }
+}
+@media (max-width: 840px) {
+    .title {
+        font-size: 4rem;
+    }
+    .buttons button {
+        margin-top: 22.5rem;
+    }
+    .buttons button#next {
+        right: 20rem;
+        transition: all .2s ease-in-out;
+    }
+    .buttons button#prev {
+        left: 20rem;
+        transition: all .2s ease-in-out;
+    }
+}
+@media (max-width: 700px) {
+    .buttons button {
+        margin-top: 22.5rem;
+    }
+    .buttons button#next {
+        /* bottom: -15rem; */
+        right: 16rem;
+        transition: all .2s ease-in-out;
+    }
+    .buttons button#prev {
+        /* bottom: -19.5rem; */
+        left: 16rem;
+        transition: all .2s ease-in-out;
+    }
+}
+@media (max-width: 590px) {
+    .title {
+        font-size: 3rem;
+    }
+    .buttons button#next {
+        right: 12rem;
+        transition: all .2s ease-in-out;
+    }
+    .buttons button#prev {
+        left: 12rem;
+        transition: all .2s ease-in-out;
+    }
+}
 
 @media (max-width: 500px) {
     .title {
         font-size: 2.5rem;
-    }
-    .intro-text {
-        margin-top: 1.5rem;
     }
     .slideshow-container {
         margin: -.5rem auto 0;
