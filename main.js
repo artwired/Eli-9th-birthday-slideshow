@@ -30,7 +30,7 @@ getData()
 // Outputting the template with JSON data
     document.querySelector("#app").innerHTML = `
         <h1 class="title">Happy Birthday Eli!</h1>
-        <p class="">Here are some fun events you experienced in 2022</p>
+        <p class="intro-text">Here are some fun events you experienced in 2022</p>
         <div class="slideshow-container">
         ${workingData.map(petTemplate).join('')}
         </div>
@@ -42,18 +42,58 @@ getData()
         </div>
     `
 
-   function findActiveSlide (slide) {
-    return slide.id === 2
-   }
+    const slidesContainer = document.querySelector(".slideshow-container")
+    const firstSlide = slidesContainer.firstElementChild
+    firstSlide.classList.add("current")
 
-   const theActiveSlide = workingData.find(findActiveSlide)
+    const slides = document.querySelectorAll(".mySlides")
+    const next = document.querySelector("#next")
+    const prev = document.querySelector("#prev")
+    const auto = false
+    const intervalTime = 5000
+    let slideInterval
 
-   if (theActiveSlide) {
-    const getContainerDiv = document.querySelector('.mySlides')
-    getContainerDiv.classList.add("current")
-   }
-    
-    
+    const nextSlide = () => {
+        // Gets the current class
+        const current = document.querySelector(".current")
+        // removes the current class
+        current.classList.remove("current")
+        // Check for next slide
+        if (current.nextElementSibling) {
+            // Add the current class to the next sibling
+            current.nextElementSibling.classList.add("current")
+        } else {
+            // Add current to start
+            slides[0].classList.add("current")
+        }
+        setTimeout(() => current.classList.remove("current"))
+    }
+
+    const prevSlide = () => {
+        // Gets the current class
+        const current = document.querySelector(".current")
+        // removes the current class
+        current.classList.remove("current")
+        // Check for previous slide
+        if (current.previousElementSibling) {
+            // Add the current class to the previous element sibling
+            current.previousElementSibling.classList.add("current")
+        } else {
+            // Add current to last
+            slides[slides.length - 1].classList.add("current")
+        }
+        setTimeout(() => current.classList.remove("current"))
+    }
+
+    // Button Events
+
+    next.addEventListener("click", e => {
+        nextSlide()
+    })
+    prev.addEventListener("click", e => {
+        prevSlide()
+    })
+
 })
 // Error handling for JSON data processing
 .catch(err => {
