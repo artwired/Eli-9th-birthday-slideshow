@@ -12,7 +12,7 @@ body {
     background-color: rgb(58, 89, 228);
     font-family: 'Anek Telugu', sans-serif;
     color: white;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 img, picture, svg, video {
     display: block;
