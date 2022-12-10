@@ -36,7 +36,7 @@ text-shadow: 5px 5px #000000;
 }
 .intro-text {
     text-align: center;
-    margin-top: 1rem;
+    margin-top: .5rem;
 }
 .sub-heading {
     margin-top: 2rem;
@@ -68,7 +68,7 @@ text-shadow: 5px 5px #000000;
     top:0;
     left: 0;
     text-align: center;
-    height:39rem;
+    height:30rem;
     background-color: rgb(80, 109, 239);
     margin: 1rem;
     border-radius: 2rem;
