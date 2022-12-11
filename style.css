@@ -250,11 +250,11 @@ text-shadow: 5px 5px #000000;
         width: 25rem;
     }
     .mySlides {
-        height: 32rem;
+        height: 32.5rem;
     }
     .buttons button {
         font-size: 2rem;
-        margin-top: 18rem;
+        margin-top: 19rem;
     }
     .buttons button#next {
         bottom: -19.5rem;
