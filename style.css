@@ -253,7 +253,7 @@ text-shadow: 5px 5px #000000;
         height: 35rem;
     }
     .buttons button {
-        font-size: 1rem;
+        font-size: 2rem;
     }
     .buttons button#next {
         bottom: -19.5rem;
