@@ -56,7 +56,7 @@ text-shadow: 5px 5px #000000;
 .the-memory {
     margin-top: .5rem;
     font-size: 1rem;
-    width: 20rem;
+    padding: 0 2rem;
 }
 .slideshow-container {
     position: relative;
