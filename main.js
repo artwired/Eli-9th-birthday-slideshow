@@ -29,8 +29,8 @@ getData()
     }
 // Outputting the template with JSON data
     document.querySelector("#app").innerHTML = `
-        <h1 class="title">Happy Birthday Eli!</h1>
-        <p class="intro-text">Here are some fun events you experienced in 2022</p>
+        <h1 class="title">Happy New Year!</h1>
+        <p class="intro-text">Here's some fun things we did in 2022</p>
         <div class="slideshow-container">
         ${workingData.map(petTemplate).join('')}
         </div>
