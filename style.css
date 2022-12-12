@@ -120,14 +120,6 @@ text-shadow: 5px 5px #000000;
     transform: translateX(-5px);
     transition: 0.2s ease;
 }
-/* @media (max-width: 1700px) {
-    .buttons button#next {
-        right: 28%;
-    }
-    .buttons button#prev {
-        left: 28%;
-    }
-} */
 
 @media (max-width: 1400px) {
     .buttons button#next {
@@ -148,9 +140,6 @@ text-shadow: 5px 5px #000000;
     .slideshow-container {
         margin: -.5rem auto 0;
     }
-    /* .buttons button {
-        margin-top: 0rem;
-    } */
     .buttons button#next {
         top: 50%;
         right: 30%;
@@ -159,15 +148,23 @@ text-shadow: 5px 5px #000000;
     .buttons button#next:hover {
         transform:none;
         transition:none;
+        color: rgb(117, 173, 238);
+    }
+    .buttons button#next:focus {
+        color: rgb(117, 173, 238);
     }
     .buttons button#next:active {
-        transform: scale(2);
+        transform: scale(1);
 	    transition: .1s;
         color: rgb(248, 218, 47);
     }
     .buttons button#prev:hover {
         transform:none;
         transition:none;
+        color: rgb(117, 173, 238);
+    }
+    .buttons button#prev:focus {
+        color: rgb(117, 173, 238);
     }
     .buttons button#prev {
         top: 50%;
@@ -175,7 +172,7 @@ text-shadow: 5px 5px #000000;
         transition: all .2s ease-in-out;
     }
     .buttons button#prev:active {
-        transform: scale(2);
+        transform: scale(1);
 	    transition: .1s;
         color: rgb(248, 218, 47);
     }
@@ -269,9 +266,7 @@ text-shadow: 5px 5px #000000;
         transition:none;
         color: rgb(117, 173, 238);
     }
-    .buttons button#next:focus {
-        color: rgb(117, 173, 238);
-    }
+
     .buttons button#next:active {
         transform: scale(1);
 	    transition: .1s;
@@ -286,9 +281,6 @@ text-shadow: 5px 5px #000000;
         bottom: -19.5rem;
         left: 10rem;
         transition: all .2s ease-in-out;
-    }
-    .buttons button#prev:focus {
-        color: rgb(117, 173, 238);
     }
     .buttons button#prev:active {
         transform: scale(1);
