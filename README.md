@@ -1,2 +1,2 @@
-# Eli-9th-birthday-slideshow
+# HNY-slideshow
 A slideshow using json data and HTML template injection
