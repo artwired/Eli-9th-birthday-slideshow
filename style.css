@@ -268,8 +268,8 @@ text-shadow: 5px 5px #000000;
     }
 
     .buttons button#next:active {
-        transform: scale(1.5);
-	    transition: .1s;
+        /* transform: scale(1.5);
+	    transition: .1s; */
         color: rgb(248, 218, 47);
     }
     .buttons button#prev:hover {
@@ -283,8 +283,8 @@ text-shadow: 5px 5px #000000;
         transition: all .2s ease-in-out;
     }
     .buttons button#prev:active {
-        transform: scale(1.5);
-	    transition: .1s;
+        /* transform: scale(1.5);
+	    transition: .1s; */
         color: rgb(248, 218, 47);
     }
     
