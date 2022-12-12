@@ -49,7 +49,7 @@ getData()
     const slides = document.querySelectorAll(".mySlides")
     const next = document.querySelector("#next")
     const prev = document.querySelector("#prev")
-    const auto = false
+    const auto = true
     const intervalTime = 5000
     let slideInterval
 
@@ -89,10 +89,25 @@ getData()
 
     next.addEventListener("click", e => {
         nextSlide()
+        if(auto) {
+            clearInterval(slideInterval)
+            slideInterval = setInterval(nextSlide, intervalTime)
+        }
     })
     prev.addEventListener("click", e => {
         prevSlide()
+        if(auto) {
+            clearInterval(slideInterval)
+            slideInterval = setInterval(nextSlide, intervalTime)
+        }
     })
+
+    // Automatic sliding functionality
+
+    if(auto) {
+        // Run next slide at interval time
+        slideInterval = setInterval(nextSlide, intervalTime)
+    }
 
 })
 // Error handling for JSON data processing
