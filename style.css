@@ -273,7 +273,7 @@ text-shadow: 5px 5px #000000;
         color: rgb(117, 173, 238);
     }
     .buttons button#next:active {
-        transform: scale(2);
+        transform: scale(1);
 	    transition: .1s;
         color: rgb(248, 218, 47);
     }
@@ -291,7 +291,7 @@ text-shadow: 5px 5px #000000;
         color: rgb(117, 173, 238);
     }
     .buttons button#prev:active {
-        transform: scale(2);
+        transform: scale(1);
 	    transition: .1s;
         color: rgb(248, 218, 47);
     }
