@@ -150,18 +150,12 @@ text-shadow: 5px 5px #000000;
         transition:none;
         color: rgb(117, 173, 238);
     }
-    .buttons button#next:focus {
-        color: rgb(117, 173, 238);
-    }
     .buttons button#next:active {
         color: rgb(248, 218, 47);
     }
     .buttons button#prev:hover {
         transform:none;
         transition:none;
-        color: rgb(117, 173, 238);
-    }
-    .buttons button#prev:focus {
         color: rgb(117, 173, 238);
     }
     .buttons button#prev {
