@@ -267,6 +267,7 @@ text-shadow: 5px 5px #000000;
     .buttons button#next:hover {
         transform:none;
         transition:none;
+        color: rgb(117, 173, 238);
     }
     .buttons button#next:focus {
         color: rgb(117, 173, 238);
@@ -279,6 +280,7 @@ text-shadow: 5px 5px #000000;
     .buttons button#prev:hover {
         transform:none;
         transition:none;
+        color: rgb(117, 173, 238);
     }
     .buttons button#prev {
         bottom: -19.5rem;
