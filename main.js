@@ -46,6 +46,7 @@ getData()
     const firstSlide = slidesContainer.firstElementChild
     firstSlide.classList.add("current")
 
+    const slideContainer = document.querySelector(".slideshow-container")
     const slides = document.querySelectorAll(".mySlides")
     const next = document.querySelector("#next")
     const prev = document.querySelector("#prev")
@@ -102,12 +103,23 @@ getData()
         }
     })
 
+    // Pauses the slide show while being hovered
+    slideContainer.addEventListener("mouseover", () => {
+        clearInterval(slideInterval)
+    })
+    // Resumes the slide show when stopped hovering
+    slideContainer.addEventListener("mouseout", () => {
+        slideInterval = setInterval(nextSlide, intervalTime)
+    })
+
     // Automatic sliding functionality
 
     if(auto) {
         // Run next slide at interval time
         slideInterval = setInterval(nextSlide, intervalTime)
     }
+
+
 
 })
 // Error handling for JSON data processing
